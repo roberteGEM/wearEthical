@@ -5,7 +5,7 @@ var db = mongojs('mongodb+srv:// Roberte:Q8N8Y29jtOnE04Os@wearethical-cjy6z.mong
 
 
 router.get('/brands', function (req, res, next) {
-  res.send('TASK API');
+  res.send('BRANDS API');
 });
 
 module.exports = router;
