@@ -1,14 +1,16 @@
-var express = require('express');
-var path = require('path');
-var bodyParser = require('body-Parser');
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var brands = require('./routes/brands');
+const cors = require("cors");
+const mongoose = require("mongoose");
 
-var port = 3000;
+const index = require('./routes/index');
+const brands = require('./routes/brands');
 
-var app = express();
+const port = 3000;
 
+const app = express();
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
